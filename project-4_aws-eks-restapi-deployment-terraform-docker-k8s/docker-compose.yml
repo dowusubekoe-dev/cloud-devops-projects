@@ -1,0 +1,31 @@
+# docker-compose.yml
+
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    depends_on:
+      - db
+
+  db:
+    image: postgres:14-alpine
+    restart: always
+    environment:
+      # These environment variables are specific to the PostgreSQL image.
+      # They are used to set up the database and user on first run.
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      # This volume ensures that data persists even if the container is removed.
+      - db-data:/var/lib/postgresql/data
+    
+volumes:
+  db-data:

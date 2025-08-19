@@ -1,0 +1,13 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+.envrc
+.idea/
+
+# Local Python
+__pycache__/
+*.pyc
+.venv/
+venv/

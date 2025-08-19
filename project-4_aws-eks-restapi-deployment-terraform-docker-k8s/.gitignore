@@ -1,0 +1,39 @@
+# Python
+# Byte-code files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+*.egg-info/
+.coverage
+.pytest_cache/
+.mypy_cache/
+.vscode/ # VS Code specific settings
+
+# Editor/OS Specific
+.DS_Store # macOS specific file
+Thumbs.db # Windows specific file
+*.swp # Vim swap files
+*~ # Emacs/Vim temporary files
+
+# Docker
+# Ignore the .env file which contains sensitive environment variables
+.env
+# Ignore built Docker images/containers data (if any are saved locally)
+# Though often not explicitly created in the repo, good to include.
+.dockerignore # If you want to version control your .dockerignore, then don't ignore it here.
+# For Docker Compose, persistent volume data should be outside the repo
+# and is usually managed by Docker volumes, but if any local mounts exist
+# that shouldn't be tracked, list them here.
+
+# Logs
+*.log

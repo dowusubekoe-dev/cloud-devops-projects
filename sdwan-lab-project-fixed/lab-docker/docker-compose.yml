@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  branch1:
+    build:
+      context: ./
+      dockerfile: branch1/Dockerfile
+    container_name: branch1
+    networks:
+      branch_net:
+        ipv4_address: 10.10.0.5
+  branch2:
+    build:
+      context: ./
+      dockerfile: branch2/Dockerfile
+    container_name: branch2
+    networks:
+      branch_net:
+        ipv4_address: 10.10.0.6
+  cloudhub:
+    build:
+      context: ./
+      dockerfile: cloudhub/Dockerfile
+    container_name: cloudhub
+    networks:
+      branch_net:
+        ipv4_address: 10.10.0.4
+networks:
+  branch_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.10.0.0/24
