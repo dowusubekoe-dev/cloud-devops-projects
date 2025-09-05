@@ -25,12 +25,12 @@ This project solves that by:
 
 ## ⚙️ Tech Stack
 
-- PS: Please use the resource provided to setup an account in [Amazon Cloud](https://aws.amazon.com/resources/create-account/)
+- PS: Please use the resource provided to set up an account in [Amazon Cloud](https://aws.amazon.com/resources/create-account/)
 
 - **AWS EKS** – Managed Kubernetes service
 - **Terraform** – Infrastructure as Code (IaC)
 - **Docker** – Containerization
-- **Python** - Backbone of application's runtime logic
+- **Python** - Backbone of the application's runtime logic
 - **Kubernetes** – Orchestration (Deployments, Services)
 - **AWS IAM & VPC** – Networking & security for EKS
 - **GitHub Actions (optional)** – CI/CD automation
@@ -47,7 +47,7 @@ This project solves that by:
     cd /home/$USER
     ```
 
-2. Create a personalize directory. E.g. `**devops-engineer**`
+2. Create a personalized directory. E.g. `**devops-engineer**`
 
     ```bash
     mkdir devops-engineer
@@ -59,7 +59,7 @@ This project solves that by:
     cd devops-engineer
     ```
 
-4. Setup myenv
+4. Set up myenv
 
     ```bash
     sudo apt update && sudo apt install -y python3-venv && python3 -m venv myenv
@@ -514,7 +514,7 @@ docker build -t "$ECR_REPO_URL":latest .
 ```
 ---
 
-### 6 TConfigure kubectl for your cluster
+### 6 Configure kubectl for your cluster
 
 
 
