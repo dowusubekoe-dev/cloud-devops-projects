@@ -568,35 +568,6 @@ Copy the **EXTERNAL-IP** from the LoadBalancer and access it in your browser.
 
 ---
 
-## 📸 Screenshots / Proof
-
-- `docker run` output ✅
-- Kubernetes pods running ✅
-- LoadBalancer service exposing app ✅
-- Browser screenshot of the app ✅
-
-_(add actual images in `/screenshots` folder)_
-
----
-
-## 🔐 Security & Best Practices
-
-- Least-privilege IAM roles for EKS nodes
-- Terraform remote state management (S3 + DynamoDB)
-- Kubernetes secrets for sensitive data
-- Resource tagging for cost tracking
-
----
-
-## 📈 Future Improvements
-
-- Automate deployments with **GitHub Actions (CI/CD)**
-- Use **Helm charts** for Kubernetes manifests
-- Integrate **Prometheus & Grafana** for monitoring
-- Add **HPA (Horizontal Pod Autoscaler)** for scaling pods
-
----
-
 ## 🎓 Learning Outcomes
 
 By completing this project, you will gain hands-on experience in:
